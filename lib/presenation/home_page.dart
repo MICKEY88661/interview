@@ -5,7 +5,7 @@ import 'package:trident_interview/presenation/teacher_list.dart';
 
 final initCall = FutureProvider.autoDispose((ref) async {
   final repository = ref.watch(localTeacherRepositoryProvider);
-  await repository.init();
+  await repository.loadFakeData();
   await Future.delayed(Durations.extralong1);
 });
 

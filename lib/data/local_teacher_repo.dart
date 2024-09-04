@@ -20,7 +20,7 @@ class LocalTeacherRepository implements ITeacherRepository {
   List<Teacher> _teachers = [];
   List<Course> _courses = [];
 
-  Future<void> init() async {
+  Future<void> loadFakeData() async {
     final courseFactory = CourseFactory();
     final teacherFactory = TeacherFactory();
 
