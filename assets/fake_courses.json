@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "teacherId": 1,
+    "name": "Twimm",
+    "content": "5-500 - Metal Fabrications",
+    "weekDay": 1,
+    "startTime": "2:10",
+    "endTime": "20:49"
+  },
+  {
+    "id": 2,
+    "teacherId": 2,
+    "name": "Tazzy",
+    "content": "6-400 - Architectural Woodwork",
+    "weekDay": 2,
+    "startTime": "2:48",
+    "endTime": "9:54"
+  },
+  {
+    "id": 3,
+    "teacherId": 3,
+    "name": "Aivee",
+    "content": "17-040 - Profit",
+    "weekDay": 3,
+    "startTime": "0:23",
+    "endTime": "22:29"
+  },
+  {
+    "id": 4,
+    "teacherId": 4,
+    "name": "Ntag",
+    "content": "1-630 - Product Substitution Procedures",
+    "weekDay": 4,
+    "startTime": "5:19",
+    "endTime": "12:11"
+  },
+  {
+    "id": 5,
+    "teacherId": 5,
+    "name": "Photobug",
+    "content": "1-904 - Hazardous Materials Removal and Disposal",
+    "weekDay": 5,
+    "startTime": "4:08",
+    "endTime": "13:13"
+  },
+  {
+    "id": 6,
+    "teacherId": 5,
+    "name": "Dynazzy",
+    "content": "11-870 - Agricultural Equipment",
+    "weekDay": 6,
+    "startTime": "0:38",
+    "endTime": "10:40"
+  },
+  {
+    "id": 7,
+    "teacherId": 5,
+    "name": "Innotype",
+    "content": "2-311 - Final Grading",
+    "weekDay": 7,
+    "startTime": "0:57",
+    "endTime": "15:06"
+  },
+  {
+    "id": 8,
+    "teacherId": 5,
+    "name": "Devify",
+    "content": "5-050 - Basic Metal Materials and Methods",
+    "weekDay": 7,
+    "startTime": "1:32",
+    "endTime": "21:17"
+  },
+  {
+    "id": 9,
+    "teacherId": 5,
+    "name": "Oodoo",
+    "content": "1-518 - Temporary Water",
+    "weekDay": 7,
+    "startTime": "5:17",
+    "endTime": "18:26"
+  },
+  {
+    "id": 10,
+    "teacherId": 5,
+    "name": "Lazzy",
+    "content": "2-625 - Retaining Wall Drainage Piping",
+    "weekDay": 7,
+    "startTime": "4:40",
+    "endTime": "11:03"
+  }
+]
