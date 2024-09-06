@@ -4,7 +4,6 @@ import 'package:trident_interview/data/local_teacher_repo.dart';
 import 'package:trident_interview/domain/course.dart';
 import 'package:trident_interview/domain/teacher.dart';
 import 'package:trident_interview/presenation/course_item.dart';
-import 'package:trident_interview/presenation/course_page.dart';
 import 'package:trident_interview/presenation/my_expansion_tile.dart';
 
 final courses = FutureProvider.autoDispose.family<List<Course>, int>((ref, int tescherId) async {
