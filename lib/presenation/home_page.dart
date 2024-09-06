@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:trident_interview/data/local_teacher_repo.dart';
 import 'package:trident_interview/presenation/teacher_list.dart';
 
-final initCall = FutureProvider.autoDispose((ref) async {
+final loadFakeDataCall = FutureProvider.autoDispose((ref) async {
   final repository = ref.watch(localTeacherRepositoryProvider);
   await repository.loadFakeData();
   await Future.delayed(Durations.extralong1);
@@ -20,7 +20,7 @@ class MyHomePage extends ConsumerWidget {
         title: Text(title),
       ),
       body: Center(
-        child: ref.watch(initCall).when(
+        child: ref.watch(loadFakeDataCall).when(
           data: (_) {
             return const TeacherList();
           },

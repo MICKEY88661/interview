@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:trident_interview/data/local_teacher_repo.dart';
 import 'package:trident_interview/domain/course.dart';
 import 'package:trident_interview/domain/teacher.dart';
+import 'package:trident_interview/presenation/course_item.dart';
 import 'package:trident_interview/presenation/course_page.dart';
 import 'package:trident_interview/presenation/my_expansion_tile.dart';
 
@@ -52,22 +53,10 @@ class TeacherList extends HookConsumerWidget {
                     data: (courses) {
                       return courses.map(
                         (course) {
-                          return ListTile(
-                            title: Text(course.name),
-                            subtitle: Text('Weekday${course.weekDay}: ${course.startTime.format(context)}-${course.endTime.format(context)}'),
-                            leading: const Icon(Icons.calendar_month),
-                            trailing: IconButton(
-                              onPressed: () {
-                                Navigator.of(context).push(
-                                  MaterialPageRoute(
-                                    builder: (_) => CoursePage(
-                                      course: course,
-                                    ),
-                                  ),
-                                );
-                              },
-                              icon: const Icon(Icons.chevron_right),
-                            ),
+                          return CourseItem(
+                            courseId: course.id,
+                            courseName: course.name,
+                            courseDateAndTime: 'Weekday${course.weekDay}: ${course.startTime.format(context)}-${course.endTime.format(context)}',
                           );
                         },
                       ).toList();
