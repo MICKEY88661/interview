@@ -5,6 +5,7 @@ import 'package:trident_interview/domain/teacher.dart';
 abstract class ITeacherRepository {
   Future<List<Teacher>> readAllTeachers();
   Future<List<Course>> readAllCourses();
+  Future<Course> readCourse(int courseId);
   Future<List<Course>> readAllCoursesOfTeacher(int teacherId);
   Future<Teacher> createTeacher({
     required String name,

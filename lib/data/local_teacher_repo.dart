@@ -128,4 +128,9 @@ class LocalTeacherRepository implements ITeacherRepository {
 
     return updatedCourse;
   }
+
+  @override
+  Future<Course> readCourse(int courseId) async {
+    return _courses.firstWhere((c) => c.id == courseId);
+  }
 }
